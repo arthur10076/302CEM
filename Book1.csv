@@ -1,0 +1,20 @@
+Online retailer to logistic,,product_id,product_name,product_list,Weight, Logistic ID,Qty,shipping date,Shipping Address,Email
+,,varchar(12),Varchar(255),text,"float(6,2)",varchar(12),int(6),date(dd-mm-yyyy),varchar(255),varchar(50)
+1,,P0001,iphone x,good,4.6,L0001,10,1-Nov,Tuen Mun,a@gmail.com
+2,,P0002,Samsung c9,very good ,3.2,L0002,20,4-Dec,Mong Kok,b@gmail.com
+3,,P0003,ipad,excellent,2.8,L0003,40,14-Dec,Prince Edward,c@gmail.com
+4,,P0004,Airpod,wonderful,2.4,L0004,50,28-Dec,Central,d@gmail.com
+5,,P0005,Samsung s9,rare,4.8,L0005,30,14-Jan,Causeway Bay,e@gmail.com
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,, ,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+Online retailer to manufacturer,,product_id,product_name,product_description,Weight,Manufacturer ID,Qty,Ordering date,Email,
+,,varchar(12),Varchar(255),Varchar(200),"float(6,2)",varchar(12),int(6),date(dd-mm-yyyy),varchar(50),
+1,,P0001,iphone x,good,4.6,M0001,10,28-Oct,f@gmail.com,
+2,,P0002,Samsung c9,very good ,3.2,M0002,20,1-Dec,g@gmail.com,
+3,,P0003,ipad,excellent,2.8,M0003,40,10-Dec,h@gmail.com,
+4,,P0004,Airpod,wonderful,2.4,M0004,50,22-Dec,i@gmail.com,
+5,,P0005,Samsung s9,rare,4.8,M0005,30,10-Jan,k@gmail.com,
