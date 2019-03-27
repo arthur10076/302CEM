@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+.product{
+	width: 100%;
+	height: auto;
+	float: left;
+	margin-top: 50px;
+}
+
+.productone{
+	float: left;
+	width: 230px;
+	height: auto;
+	border-radius: 7px; 
+	background-color: white;
+	padding-bottom: 15px;
+	border-bottom: 2px solid darkgray;
+	border-left: 1px solid darkgray;
+	border-right: 1px solid darkgray;
+	margin-left: 16px;
+	margin-right: 16px;
+	margin-bottom: 16px;
+}
+
+.productimg{
+	width: 230px;
+	float: left;
+	border: 1px solid;
+	border-radius: 7px; 
+	overflow: hidden;
+}
+
+.productimg img{
+	width: 100%;
+}
+
+.producttext{
+	width: 230px;
+	float: left;
+	margin-top: 10px;
+	padding-left: 10px;
+}
+
+.productdesc{
+	width: 230px;
+	float: left;
+	font-size: 14px;
+	margin-top: 5px;
+	padding-left: 10px;
+}
+
+.productprice{
+	width: 230px;
+	float: left;
+	margin-top: 10px;
+}
+.price{
+	float: left;
+	font-size: 20px;
+	font-weight: bold;
+	padding-left: 10px;
+}
+.button{
+	float: right;
+	padding: 5px;
+	background-color:#fcc508;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+
+.button5 {
+  background-color: white;
+  color: black;
+}
+
+.button5:hover {
+  background-color: #e7e7e7;
+}
+
+.producttwo{
+	margin-left: 16px;
+	margin-right: 16px;
+	margin-bottom: 16px;
+}
+
+</style>
+		<meta charset="utf-8">
+		<title>Web Store</title>
+		<meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>				
+	</head>
+
+	<body>
+		{% include 'includes/_navbar.html' %}
+		{% include 'includes/_messages.html' %}
+		<div class="container">
+		{% block body %}{% endblock %}
+		</div>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</body>
+
+</html>

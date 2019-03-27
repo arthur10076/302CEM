@@ -1,0 +1,64 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="container">
+	<div class="row">
+		<div class="col-xs-5 col-sm-3 col-lg-3">
+			<h2> Food&Drinks </h2>
+			<div class="list-group">
+				<a href="/" class="list-group-item">Food&Drinks</a>
+				<a href="/clothes" class="list-group-item active">Clothes</a>
+			</div>
+		</div>
+		
+		<div class="col-xs-7 col-sm-9 col-lg-9" >
+		
+			<div class="product">
+				<div class="container">
+					<div class="productone">
+						<div class="productimg">
+							<img src="{{url_for('static', filename='tshirt.jpg')}}">
+						</div>
+						<div class="producttext">
+							<h4>T-Shirt</h4>
+						</div>
+						<div class="productdesc">
+							<b>Black T-shirt</b> Nice T-Shirt
+						</div>
+						<div class="productprice">
+							<div class="price">
+								$100
+							</div>
+							<button class="button button5">Add To Cart</button>
+						</div>
+					</div>
+					
+					<div class="productone producttwo">
+						<div class="productimg">
+							<img src="{{url_for('static', filename='jeans.jpg')}}">
+						</div>
+						<div class="producttext">
+							<h4>Jeans</h4>
+						</div>
+						<div class="productdesc">
+							<b>Black jeans</b> 
+						</div>
+						<div class="productprice">
+							<div class="price">
+								$150
+							</div>
+							<button class="button button5">Add To Cart</button>
+						</div>
+					</div>
+
+				</div>
+			
+			</div>
+		
+		</div>
+	</div>
+</div>	
+
+
+{% endblock %}
