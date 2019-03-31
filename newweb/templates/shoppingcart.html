@@ -1,0 +1,47 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<h1>Shopping Cart</h1>
+<small>{{session.username}}</small>
+
+<form action="" method="POST">
+
+ <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Product Name</th>
+        <th>Quantity</th>
+        <th>Prices</th>
+      </tr>
+    </thead>
+    <tbody>
+     {% for shoppingcart in shoppingcart %}	
+      <tr>
+        <td><input type="text" name="pname" value="{{shoppingcart.pname |safe}}" class_="form-control" readonly></td>
+        <td><input type="number" name="number" value="{{shoppingcart.quantity |safe}}" class_="form-control"></td>
+        <td><input type="number" name="pprices" value="{{shoppingcart.prices |safe}}" class_="form-control" readonly></td>
+	<td>	
+	 <form action="{{url_for('delete_item', id=shoppingcart.id)}}" method="POST">
+		<input type="hidden" name="_method" value="DELECT">
+		<input type="submit" value="Delete" class="btn btn-danger pull-right">
+	 </form>
+	</td>
+      </tr>
+     {%  endfor %}
+
+    </tbody>
+ </table>
+
+ <h1>Confirm Order</h1>
+ <hr><hr>
+ <h2>Total Prices:</h2>$<input type="number" name="tprices" value="{{shoppingcart|sum(attribute='prices') }}" class_="form-control" readonly>
+
+ <input type="submit" class="btn btn-primary" value="Check out">
+</form>
+
+
+
+
+
+{% endblock %}

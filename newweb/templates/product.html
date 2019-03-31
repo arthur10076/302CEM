@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+	<h1>{{product1.name}}</h1>
+
+	<hr>
+	<div>
+	 <h3> Description:</h3>{{product1.description |safe}}
+	</div>
+	<hr>
+	<div>
+	 <h3> Prices:</h3>{{product1.prices |safe}}
+	</div>
+	<br/>
+	<a class="btn btn-success" href="/productadd/{{product1.id}}">Add to cart</a>
+{% endblock %}
