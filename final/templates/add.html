@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+	<h1>Add to Shopping Cart</h1>
+	<hr><hr>
+
+	<form  action="" method="POST">
+	 <input type="text" name="pname" value="{{session.pname.name}}" class_="form-control" readonly>
+	 <hr>
+	 <h2>number:</h2>
+	
+	 <div class="form-group">
+	  <input type="number" name="number" values={{request.form.number}} class_="form-control">
+	 </div>
+	
+	 <hr>
+	 <h2>Prices:</h2>
+	 <input type="number" name="pprices" value="{{session.pprices.prices}}" class_="form-control" readonly>
+	 <hr>
+	 <input type="submit" class="btn btn-primary" value="Submit">
+	</form>
+
+
+
+{% endblock %}

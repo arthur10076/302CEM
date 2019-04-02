@@ -1,0 +1,41 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<h1>Orders</h1>
+
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Product Name</th>
+        <th>Quantity</th>
+        <th>Username</th>
+	<th>User email</th>
+	<th>User address</th>
+	<th>User contact</th>
+      </tr>
+    </thead>
+    <tbody>
+     {% for order in order %}	
+      <tr>
+        <td>{{order.pname}}</td>
+        <td>{{order.quantity}}</td>
+        <td>{{order.username}}</td>
+	<td>{{order.reemail}}</td>
+	<td>{{order.readdress}}</td>
+	<td>{{order.recontact}}</td>
+      </tr>
+     {%  endfor %}
+
+    </tbody>
+</table>
+
+
+
+
+
+{% endblock %}
+
+
+
+
